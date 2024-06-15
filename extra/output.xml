@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-06-13T12:24:21.755992" rpa="false" schemaversion="5">
+<suite id="s1" name="Chatgpt" source="C:\Users\mosia\OneDrive\Documentos\pha2024\extra\chatgpt.robot">
+<test id="s1-t1" name="Caso de teste 01: Abrir navegador" line="6">
+<kw name="Abrir navegador">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-13T12:24:22.300375" level="INFO">Opening browser 'chrome' to base url 'https://chatgpt.com/'.</msg>
+<arg>https://chatgpt.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-13T12:24:22.300375" elapsed="2.741275"/>
+</kw>
+<status status="PASS" start="2024-06-13T12:24:22.299376" elapsed="2.743273"/>
+</kw>
+<kw name="Pesquisar produto &quot;BLOUSE&quot;" source_name="Pesquisar produto &quot;${ITEM}&quot;">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-13T12:24:25.045650" level="INFO">Typing text 'BLOUSE' into text field 'id=prompt-textarea'.</msg>
+<arg>id=prompt-textarea</arg>
+<arg>${ITEM}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-13T12:24:25.044649" elapsed="0.484254"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-06-13T12:24:25.529903" level="INFO">Sending key(s) ('\\13',) to id=prompt-textarea element.</msg>
+<msg time="2024-06-13T12:24:26.371216" level="INFO">Sending keys \13</msg>
+<arg>id=prompt-textarea</arg>
+<arg>\\13</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-06-13T12:24:25.529903" elapsed="0.881856"/>
+</kw>
+<kw name="Debug" owner="DebugLibrary">
+<doc>Open a interactive shell, run any RobotFramework keywords.</doc>
+<status status="PASS" start="2024-06-13T12:24:26.412756" elapsed="22.210982"/>
+</kw>
+<status status="PASS" start="2024-06-13T12:24:25.043648" elapsed="23.580090"/>
+</kw>
+<kw name="Fechar navegador">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-13T12:24:48.624741" elapsed="2.098074"/>
+</kw>
+<status status="PASS" start="2024-06-13T12:24:48.624741" elapsed="2.098074"/>
+</kw>
+<status status="PASS" start="2024-06-13T12:24:22.298375" elapsed="28.425441"/>
+</test>
+<status status="PASS" start="2024-06-13T12:24:21.758992" elapsed="28.965825"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Chatgpt">Chatgpt</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
