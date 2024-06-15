@@ -1,343 +1,329 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-06-14T19:27:36.065380" rpa="false" schemaversion="5">
-<suite id="s1" name="segundoScript" source="C:\Users\mosia\OneDrive\Documentos\pha2024\test\feature\segundoScript.robot">
-<test id="s1-t1" name="Cenario 01: Logar com sucesso" line="11">
-<kw name="Abrir Navegador" owner="hooks" type="SETUP">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-14T19:27:36.782847" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<arg>about:blank</arg>
-<arg>chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-06-14T19:27:36.782847" elapsed="2.590388"/>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-06-15T18:17:52.876309" rpa="false" schemaversion="5">
+<suite id="s1" name="Last" source="C:\Users\mosia\OneDrive\Documentos\pha2024\last.robot">
+<test id="s1-t1" name="Executar Todos os Exercícios" line="6">
+<kw name="Exibir Informacoes Cliente">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Dados do Cliente:</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.939918" elapsed="0.000998"/>
 </kw>
-<status status="PASS" start="2024-06-14T19:27:36.782847" elapsed="2.591384"/>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Nome: ${CLIENTE01['nome']}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.940916" elapsed="0.001000"/>
 </kw>
-<kw name="Entrar na pagina" owner="keywords_page">
-<kw name="Acessar a pagina home site Sauce Demo" owner="keywords_page">
-<kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-06-14T19:27:39.379231" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
-<arg>${URL}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-06-14T19:27:39.378235" elapsed="0.899862"/>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Idade: ${CLIENTE01['idade']}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.941916" elapsed="0.001002"/>
 </kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-06-14T19:27:40.278097" elapsed="0.084570"/>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Rua: ${CLIENTE01['rua']}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.942918" elapsed="0.001000"/>
 </kw>
-<status status="PASS" start="2024-06-14T19:27:39.377232" elapsed="0.985435"/>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Número: ${CLIENTE01['numero']}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.943918" elapsed="0.001191"/>
 </kw>
-<kw name="Digitar o login" owner="keywords_page">
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${LOGIN}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-06-14T19:27:40.362667" elapsed="0.108490"/>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>CEP: ${CLIENTE01['cep']}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.945109" elapsed="0.000995"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-14T19:27:40.473158" level="INFO">Typing text 'standard_user' into text field 'xpath=//input[@id='user-name']'.</msg>
-<arg>${USER}</arg>
-<arg>standard_user</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-14T19:27:40.472158" elapsed="0.380403"/>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Bairro: ${CLIENTE01['bairro']}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.947104" elapsed="0.001000"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-14T19:27:40.852561" level="INFO">Typing text 'secret_sauce' into text field 'xpath=//input[@id='password']'.</msg>
-<arg>${PASSWORD}</arg>
-<arg>secret_sauce</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-14T19:27:40.852561" elapsed="0.363540"/>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Cidade: ${CLIENTE01['cidade']}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.948104" elapsed="0.002007"/>
 </kw>
-<status status="PASS" start="2024-06-14T19:27:40.362667" elapsed="0.853434"/>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Estado: ${CLIENTE01['estado']}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.951108" elapsed="0.002001"/>
 </kw>
-<kw name="Clicar no botão Logar" owner="keywords_page">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-14T19:27:41.216101" level="INFO">Clicking element 'xpath=//input[@id='login-button']'.</msg>
-<arg>${LOGINBUTTON}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-14T19:27:41.216101" elapsed="0.484095"/>
+<status status="PASS" start="2024-06-15T18:17:52.939918" elapsed="0.013191"/>
 </kw>
-<status status="PASS" start="2024-06-14T19:27:41.216101" elapsed="0.484095"/>
+<kw name="Exibir Frutas">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Lista de Frutas:</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.955109" elapsed="0.000000"/>
 </kw>
-<kw name="Verificar se logou com sucesso" owner="keywords_page">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${PRODUCTTEXT}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-14T19:27:41.700196" elapsed="0.046873"/>
+<for flavor="IN">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${fruta}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.956107" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-06-14T19:27:41.700196" elapsed="0.046873"/>
+<var name="${fruta}">Apple</var>
+<status status="PASS" start="2024-06-15T18:17:52.956107" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${fruta}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.956107" elapsed="0.000998"/>
 </kw>
-<status status="PASS" start="2024-06-14T19:27:39.376234" elapsed="2.370835"/>
+<var name="${fruta}">Banana</var>
+<status status="PASS" start="2024-06-15T18:17:52.956107" elapsed="0.000998"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${fruta}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.957105" elapsed="0.000000"/>
 </kw>
-<kw name="Fechar Navegador" owner="hooks" type="TEARDOWN">
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-06-14T19:27:41.762695" elapsed="3.420586"/>
+<var name="${fruta}">Orange</var>
+<status status="PASS" start="2024-06-15T18:17:52.957105" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${fruta}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.957105" elapsed="0.001000"/>
 </kw>
-<status status="PASS" start="2024-06-14T19:27:41.762695" elapsed="3.420586"/>
+<var name="${fruta}">Grape</var>
+<status status="PASS" start="2024-06-15T18:17:52.957105" elapsed="0.001000"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${fruta}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.958105" elapsed="0.001004"/>
 </kw>
-<tag>Logar</tag>
-<status status="PASS" start="2024-06-14T19:27:36.781491" elapsed="8.401790"/>
+<var name="${fruta}">Mango</var>
+<status status="PASS" start="2024-06-15T18:17:52.958105" elapsed="0.001004"/>
+</iter>
+<var>${fruta}</var>
+<value>@{FRUTAS}</value>
+<status status="PASS" start="2024-06-15T18:17:52.955109" elapsed="0.004000"/>
+</for>
+<status status="PASS" start="2024-06-15T18:17:52.954110" elapsed="0.004999"/>
+</kw>
+<kw name="Contar Numeros Pares">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Contando números pares entre 0 e 10:</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.960624" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-15T18:17:52.961626" level="INFO">${contador} = 0</msg>
+<var>${contador}</var>
+<arg>0</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.961626" elapsed="0.000000"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Set Variable" owner="BuiltIn">
+<arg>${contador}</arg>
+<arg>${contador} + 1</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.962628" elapsed="0.000000"/>
+</kw>
+<arg>${i} % 2 == 0</arg>
+<arg>Set Variable</arg>
+<arg>${contador}</arg>
+<arg>${contador} + 1</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.961626" elapsed="0.001002"/>
+</kw>
+<var name="${i}">0</var>
+<status status="PASS" start="2024-06-15T18:17:52.961626" elapsed="0.001002"/>
+</iter>
+<iter>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${i} % 2 == 0</arg>
+<arg>Set Variable</arg>
+<arg>${contador}</arg>
+<arg>${contador} + 1</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.962628" elapsed="0.001002"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2024-06-15T18:17:52.962628" elapsed="0.001002"/>
+</iter>
+<iter>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Set Variable" owner="BuiltIn">
+<arg>${contador}</arg>
+<arg>${contador} + 1</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.964626" elapsed="0.000000"/>
+</kw>
+<arg>${i} % 2 == 0</arg>
+<arg>Set Variable</arg>
+<arg>${contador}</arg>
+<arg>${contador} + 1</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.963630" elapsed="0.001995"/>
+</kw>
+<var name="${i}">2</var>
+<status status="PASS" start="2024-06-15T18:17:52.963630" elapsed="0.001995"/>
+</iter>
+<iter>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${i} % 2 == 0</arg>
+<arg>Set Variable</arg>
+<arg>${contador}</arg>
+<arg>${contador} + 1</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.965625" elapsed="0.000000"/>
+</kw>
+<var name="${i}">3</var>
+<status status="PASS" start="2024-06-15T18:17:52.965625" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Set Variable" owner="BuiltIn">
+<arg>${contador}</arg>
+<arg>${contador} + 1</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.967626" elapsed="0.001000"/>
+</kw>
+<arg>${i} % 2 == 0</arg>
+<arg>Set Variable</arg>
+<arg>${contador}</arg>
+<arg>${contador} + 1</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.966627" elapsed="0.001999"/>
+</kw>
+<var name="${i}">4</var>
+<status status="PASS" start="2024-06-15T18:17:52.966627" elapsed="0.001999"/>
+</iter>
+<iter>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${i} % 2 == 0</arg>
+<arg>Set Variable</arg>
+<arg>${contador}</arg>
+<arg>${contador} + 1</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.969629" elapsed="0.000000"/>
+</kw>
+<var name="${i}">5</var>
+<status status="PASS" start="2024-06-15T18:17:52.968626" elapsed="0.001003"/>
+</iter>
+<iter>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Set Variable" owner="BuiltIn">
+<arg>${contador}</arg>
+<arg>${contador} + 1</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.970625" elapsed="0.001000"/>
+</kw>
+<arg>${i} % 2 == 0</arg>
+<arg>Set Variable</arg>
+<arg>${contador}</arg>
+<arg>${contador} + 1</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.970625" elapsed="0.001000"/>
+</kw>
+<var name="${i}">6</var>
+<status status="PASS" start="2024-06-15T18:17:52.970625" elapsed="0.001000"/>
+</iter>
+<iter>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${i} % 2 == 0</arg>
+<arg>Set Variable</arg>
+<arg>${contador}</arg>
+<arg>${contador} + 1</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.971625" elapsed="0.000000"/>
+</kw>
+<var name="${i}">7</var>
+<status status="PASS" start="2024-06-15T18:17:52.971625" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Set Variable" owner="BuiltIn">
+<arg>${contador}</arg>
+<arg>${contador} + 1</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.972625" elapsed="0.000000"/>
+</kw>
+<arg>${i} % 2 == 0</arg>
+<arg>Set Variable</arg>
+<arg>${contador}</arg>
+<arg>${contador} + 1</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.972625" elapsed="0.000000"/>
+</kw>
+<var name="${i}">8</var>
+<status status="PASS" start="2024-06-15T18:17:52.971625" elapsed="0.001000"/>
+</iter>
+<iter>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${i} % 2 == 0</arg>
+<arg>Set Variable</arg>
+<arg>${contador}</arg>
+<arg>${contador} + 1</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.973628" elapsed="0.000000"/>
+</kw>
+<var name="${i}">9</var>
+<status status="PASS" start="2024-06-15T18:17:52.972625" elapsed="0.001003"/>
+</iter>
+<var>${i}</var>
+<value>0</value>
+<value>10</value>
+<status status="PASS" start="2024-06-15T18:17:52.961626" elapsed="0.012002"/>
+</for>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Quantidade de números pares: ${contador}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.973628" elapsed="0.000997"/>
+</kw>
+<status status="PASS" start="2024-06-15T18:17:52.959109" elapsed="0.016517"/>
+</kw>
+<kw name="Testar Alteracao de Senha">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-15T18:17:52.976626" level="INFO">${nova_senha} = nova_senha_987</msg>
+<var>${nova_senha}</var>
+<arg>nova_senha_987</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.976626" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Alterando senha para: ${nova_senha}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.977628" elapsed="0.000000"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2024-06-15T18:17:52.978628" level="INFO">&amp;{CREDENCIAIS} = { senha=nova_senha_987 }</msg>
+<arg>&amp;{CREDENCIAIS}</arg>
+<arg>senha=${nova_senha}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.977628" elapsed="0.001000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Credenciais após alteração da senha: ${CREDENCIAIS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-15T18:17:52.978628" elapsed="0.000999"/>
+</kw>
+<status status="PASS" start="2024-06-15T18:17:52.975626" elapsed="0.004001"/>
+</kw>
+<status status="PASS" start="2024-06-15T18:17:52.938916" elapsed="0.040711"/>
 </test>
-<test id="s1-t2" name="Cenario 02: Adicionar 1 produto no carrinho pela tela de detalhe" line="15">
-<kw name="Abrir Navegador" owner="hooks" type="SETUP">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-14T19:27:45.183281" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<arg>about:blank</arg>
-<arg>chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-06-14T19:27:45.183281" elapsed="5.488240"/>
-</kw>
-<status status="PASS" start="2024-06-14T19:27:45.183281" elapsed="5.489237"/>
-</kw>
-<kw name="Entrar na pagina" owner="keywords_page">
-<kw name="Acessar a pagina home site Sauce Demo" owner="keywords_page">
-<kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-06-14T19:27:50.679519" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
-<arg>${URL}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-06-14T19:27:50.678519" elapsed="0.088163"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-06-14T19:27:50.766682" elapsed="0.934370"/>
-</kw>
-<status status="PASS" start="2024-06-14T19:27:50.677523" elapsed="1.024532"/>
-</kw>
-<kw name="Digitar o login" owner="keywords_page">
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${LOGIN}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-06-14T19:27:51.703059" elapsed="0.131698"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-14T19:27:51.834757" level="INFO">Typing text 'standard_user' into text field 'xpath=//input[@id='user-name']'.</msg>
-<arg>${USER}</arg>
-<arg>standard_user</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-14T19:27:51.834757" elapsed="1.202346"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-14T19:27:53.038104" level="INFO">Typing text 'secret_sauce' into text field 'xpath=//input[@id='password']'.</msg>
-<arg>${PASSWORD}</arg>
-<arg>secret_sauce</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-14T19:27:53.038104" elapsed="0.491527"/>
-</kw>
-<status status="PASS" start="2024-06-14T19:27:51.702055" elapsed="1.827576"/>
-</kw>
-<kw name="Clicar no botão Logar" owner="keywords_page">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-14T19:27:53.532632" level="INFO">Clicking element 'xpath=//input[@id='login-button']'.</msg>
-<arg>${LOGINBUTTON}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-14T19:27:53.531632" elapsed="0.278973"/>
-</kw>
-<status status="PASS" start="2024-06-14T19:27:53.530631" elapsed="0.279974"/>
-</kw>
-<kw name="Verificar se logou com sucesso" owner="keywords_page">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${PRODUCTTEXT}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-14T19:27:53.812686" elapsed="0.112968"/>
-</kw>
-<status status="PASS" start="2024-06-14T19:27:53.812686" elapsed="0.112968"/>
-</kw>
-<status status="PASS" start="2024-06-14T19:27:50.675518" elapsed="3.250136"/>
-</kw>
-<kw name="Clicar no nome do produto" owner="keywords_page">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${PRODUCT4}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-14T19:27:53.930653" elapsed="0.319032"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-14T19:27:54.250685" level="INFO">Clicking element 'xpath=//a[@id='item_4_title_link']'.</msg>
-<arg>${PRODUCT4}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-14T19:27:54.249685" elapsed="0.259898"/>
-</kw>
-<status status="PASS" start="2024-06-14T19:27:53.929655" elapsed="0.580928"/>
-</kw>
-<kw name="Clicar no botão Add to cart" owner="keywords_page">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath=//*[text()='Sauce Labs Backpack']</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-14T19:27:54.535025" elapsed="0.101161"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-14T19:27:54.638186" level="INFO">Clicking element 'xpath=//button[@id='add-to-cart']'.</msg>
-<arg>${ADDCARTB}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-14T19:27:54.637184" elapsed="0.097840"/>
-</kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-06-14T19:27:54.777254" level="INFO">Element 'xpath=//*[@id='remove']' is displayed.</msg>
-<arg>xpath=//*[@id='remove']</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-14T19:27:54.736534" elapsed="0.040720"/>
-</kw>
-<status status="PASS" start="2024-06-14T19:27:54.535025" elapsed="0.243229"/>
-</kw>
-<kw name="Validar se o produto está na tela do Carrinho" owner="keywords_page">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-14T19:27:54.781485" level="INFO">Clicking element 'xpath=//*[@class='shopping_cart_link']'.</msg>
-<arg>${CARTICON}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-14T19:27:54.780487" elapsed="0.132826"/>
-</kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-06-14T19:27:54.949299" level="INFO">Element 'xpath=//a[@id='item_4_title_link']' is displayed.</msg>
-<arg>${PRODUCT4}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-14T19:27:54.914299" elapsed="0.035000"/>
-</kw>
-<status status="PASS" start="2024-06-14T19:27:54.779490" elapsed="0.169809"/>
-</kw>
-<kw name="Fechar Navegador" owner="hooks" type="TEARDOWN">
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-06-14T19:27:54.951176" elapsed="4.273166"/>
-</kw>
-<status status="PASS" start="2024-06-14T19:27:54.950173" elapsed="4.274169"/>
-</kw>
-<tag>Carrinho</tag>
-<status status="PASS" start="2024-06-14T19:27:45.183281" elapsed="14.041061"/>
-</test>
-<test id="s1-t3" name="Cenario 03: Acessar o About da Menu lateral com sucesso" line="22">
-<kw name="Abrir Navegador" owner="hooks" type="SETUP">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-14T19:27:59.224342" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<arg>about:blank</arg>
-<arg>chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-06-14T19:27:59.224342" elapsed="2.708991"/>
-</kw>
-<status status="PASS" start="2024-06-14T19:27:59.224342" elapsed="2.708991"/>
-</kw>
-<kw name="Entrar na pagina" owner="keywords_page">
-<kw name="Acessar a pagina home site Sauce Demo" owner="keywords_page">
-<kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-06-14T19:28:01.933333" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
-<arg>${URL}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-06-14T19:28:01.933333" elapsed="0.999690"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-06-14T19:28:02.933023" elapsed="0.046875"/>
-</kw>
-<status status="PASS" start="2024-06-14T19:28:01.933333" elapsed="1.046565"/>
-</kw>
-<kw name="Digitar o login" owner="keywords_page">
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${LOGIN}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-06-14T19:28:02.979898" elapsed="0.031247"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-14T19:28:03.011145" level="INFO">Typing text 'standard_user' into text field 'xpath=//input[@id='user-name']'.</msg>
-<arg>${USER}</arg>
-<arg>standard_user</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-14T19:28:03.011145" elapsed="0.312822"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-14T19:28:03.339593" level="INFO">Typing text 'secret_sauce' into text field 'xpath=//input[@id='password']'.</msg>
-<arg>${PASSWORD}</arg>
-<arg>secret_sauce</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-14T19:28:03.323967" elapsed="0.234373"/>
-</kw>
-<status status="PASS" start="2024-06-14T19:28:02.979898" elapsed="0.578442"/>
-</kw>
-<kw name="Clicar no botão Logar" owner="keywords_page">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-14T19:28:03.558340" level="INFO">Clicking element 'xpath=//input[@id='login-button']'.</msg>
-<arg>${LOGINBUTTON}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-14T19:28:03.558340" elapsed="0.218741"/>
-</kw>
-<status status="PASS" start="2024-06-14T19:28:03.558340" elapsed="0.218741"/>
-</kw>
-<kw name="Verificar se logou com sucesso" owner="keywords_page">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${PRODUCTTEXT}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-14T19:28:03.777081" elapsed="0.046872"/>
-</kw>
-<status status="PASS" start="2024-06-14T19:28:03.777081" elapsed="0.046872"/>
-</kw>
-<status status="PASS" start="2024-06-14T19:28:01.933333" elapsed="1.890620"/>
-</kw>
-<kw name="Clicar no ícone do Menu" owner="keywords_page">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${MENUB}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-14T19:28:03.823953" elapsed="0.041722"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-14T19:28:03.865675" level="INFO">Clicking element 'xpath=//*[@id='react-burger-menu-btn']'.</msg>
-<arg>${MENUB}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-14T19:28:03.865675" elapsed="0.089484"/>
-</kw>
-<status status="PASS" start="2024-06-14T19:28:03.823953" elapsed="0.131206"/>
-</kw>
-<kw name="Clicar na opção About" owner="keywords_page">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${SIDEBAR}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-14T19:28:03.957160" elapsed="9.152105"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-14T19:28:13.109265" level="INFO">Clicking element 'xpath=//*[@id='about_sidebar_link']'.</msg>
-<arg>${SIDEBAR}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-14T19:28:13.109265" elapsed="5.291380"/>
-</kw>
-<status status="PASS" start="2024-06-14T19:28:03.956159" elapsed="14.444486"/>
-</kw>
-<kw name="Validar se abre a tela Soucelabs com sucesso" owner="keywords_page">
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-06-14T19:28:18.539472" level="INFO">Element 'xpath=//p[text()='The world relies on your code. Test on thousands of different device, browser, and OS configurations–anywhere, any time.']' is displayed.</msg>
-<arg>xpath=//p[text()='The world relies on your code. Test on thousands of different device, browser, and OS configurations–anywhere, any time.']</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-14T19:28:18.400645" elapsed="0.138827"/>
-</kw>
-<status status="PASS" start="2024-06-14T19:28:18.400645" elapsed="0.154451"/>
-</kw>
-<kw name="Fechar Navegador" owner="hooks" type="TEARDOWN">
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-06-14T19:28:18.555096" elapsed="2.435574"/>
-</kw>
-<status status="PASS" start="2024-06-14T19:28:18.555096" elapsed="2.435574"/>
-</kw>
-<tag>About</tag>
-<status status="PASS" start="2024-06-14T19:27:59.224342" elapsed="21.766328"/>
-</test>
-<doc>Aqui estarão todos os testes relacionados</doc>
-<status status="PASS" start="2024-06-14T19:27:36.065380" elapsed="44.925290"/>
+<doc>Exercícios Combinados</doc>
+<status status="PASS" start="2024-06-15T18:17:52.879309" elapsed="0.101319"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">About</stat>
-<stat pass="1" fail="0" skip="0">Carrinho</stat>
-<stat pass="1" fail="0" skip="0">Logar</stat>
 </tag>
 <suite>
-<stat pass="3" fail="0" skip="0" id="s1" name="segundoScript">segundoScript</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Last">Last</stat>
 </suite>
 </statistics>
 <errors>
